@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-indent: 1.6;
+    background-color: #1f1f1f;
+}
+
+nav {
+    margin-bottom: 25px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 20px 0;
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+nav ul li {
+    text-decoration: none;
+}
+
+nav ul li a {
+    background-color: rebeccapurple;
+    padding: 10px;
+    color: wheat;
+    font-size: xx-large;
+    border-radius: 20px;
+    text-decoration: none;
+}
+a:hover {
+    color: wheat;
+}
+
+nav .active {
+    color: #1f1f1f;
+    font-weight: bold;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.main {
+    display: flex;
+}
+.home-info {
+    max-width: 760px;
+}
+
+.home-info h1 {
+    color: wheat;
+    font-size: 50px;
+}
+
+.home-info h2 {
+    color: wheat;
+    font-size: 50px;
+}
+
+.home-info p {
+    color: wheat;
+    font-size: 25px;
+    margin-top: 40px;
+}
+.home-info {
+    padding: 20px 0;
+    margin-left: 80px;
+
+    padding-top: 30px;
+}
+
+.main-about {
+    color: wheat;
+    margin: 40px;
+    padding: 20px;
+    max-width: 800px;
+}
+.main-about h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.main-about a {
+    text-decoration: none;
+}
+.main-about p {
+    font-size: 25px;
+}
+
+i {
+    padding: 10px;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+}
+.stuff h2 {
+    color: rebeccapurple;
+    font-size: 40px;
+}
+.stuff {
+    margin: 40px;
+    padding: 20px;
+}
+
+.stuff .fa-css3 {
+    color: blue;
+}
+.stuff .fa-html5 {
+    color: orangered;
+}
+.stuff .fa-github {
+    color: greenyellow;
+}
+.stuff .fa-sass {
+    color: pink;
+}
+.stuff .fa-react {
+    color: lightblue;
+}
+.stuff .fa-js {
+    color: yellow;
+}
+
+.soon h2 {
+    color: rebeccapurple;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: wheat;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 80px;
+}
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.class span {
+    color: rebeccapurple;
+}
+.class {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.class .git {
+    margin-top: 20px;
+}
+.class .git a {
+    font-size: 30px;
+}
+
+.container .class {
+    max-width: 400px;
+    margin-left: 80px;
+}
+.class .fa-github {
+    color: yellowgreen;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.class a {
+    text-decoration: none;
+    color: rebeccapurple;
+    text-decoration: none;
+}
+.class a:hover {
+    color: yellowgreen;
+}
+.footer {
+    color: wheat;
+
+    bottom: 15px;
+    left: 80px;
+    position: inherit;
+    padding-top: 2rem;
+
+    padding-bottom: 2rem;
+}
+
+.cnt h2 {
+    color: wheat;
+    text-align: center;
+    font-size: 50px;
+}
+.cnt {
+    width: 800px;
+    margin: 30px 0;
+    margin-left: 80px;
+}
+.cnt p {
+    color: wheat;
+    font-size: 25px;
+}
+.class {
+    max-width: 800px;
+}
+
+.skills h2 {
+    color: wheat;
+    font-size: 50px;
+}
+
+.portfolio-project {
+    font-size: 40px;
+    color: wheat;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.portfolio-project img {
+    width: auto;
+    height: 300px;
+    border: 1px solid wheat;
+    margin-top: 40px;
+}
+.portfolio-project img:hover {
+    cursor: pointer;
+}
+.portfolio-project p {
+    font-size: 25px;
+    margin-top: 10px;
+}
+.portfolio-project a {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+.portfolio-project a:hover {
+    color: rgb(115, 66, 163);
+}
+
+footer > p {
+    background-color: rebeccapurple;
+    width: 40%;
+}
+
+.tatula img {
+    width: auto;
+    height: 300px;
+    border: 1px solid wheat;
+    margin-top: 40px;
+}
+.tatula {
+    font-size: 40px;
+    color: wheat;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.tatula p {
+    font-size: 25px;
+    margin-top: 10px;
+}
+.tatula a {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+
+.tatula a:hover {
+    color: rgb(115, 66, 163);
+}
+.tatula img:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        padding: 10px;
+        margin-left: 0;
+        gap: 34px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li {
+        background-color: rebeccapurple;
+    }
+
+    nav ul li a {
+        background-color: transparent;
+        color: wheat;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+    .home-info {
+        margin-right: 30px;
+        margin-left: 60px;
+    }
+
+    img[alt='slika'] {
+        margin-left: 0;
+        margin-top: 0;
+        height: auto;
+        width: 100%;
+    }
+    .social a {
+        font-size: 20px;
+    }
+    .stuff {
+        margin-left: 50px;
+        padding: 0px;
+        width: 100%;
+    }
+    .soon h2 {
+        margin-left: 0;
+    }
+    .footer {
+        position: static;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .portfolio-project {
+        margin-left: 0;
+    }
+    .portfolio-project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio-project p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .cnt {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .class {
+        display: flex;
+        align-items: center;
+    }
+
+    .container .class {
+        margin-left: 0;
+    }
+
+    .class .fa-github {
+        margin-bottom: 50px;
+    }
+
+    .class div i {
+        margin: 0 !important;
+    }
+
+    .class .git {
+        margin: 0;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}

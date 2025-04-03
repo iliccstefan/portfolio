@@ -13,6 +13,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: var(--tertiary-color);
+    padding: 2rem;
 }
 
 :root {
@@ -174,6 +175,99 @@ h3 {
     grid-area: 2 / 5 / 3 / 6;
 }
 
+.project-container img {
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.project-container img:hover {
+    cursor: pointer;
+}
+
+.projects {
+    width: 700px;
+    margin: 0 auto auto;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.project-description {
+    margin-bottom: 2rem;
+}
+
+.project-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-techologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-techology {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.project-techology:hover {
+    opacity: 0.9;
+    /* color: var(--primary-color); */
+}
+
+.project-techology img {
+    height: 20px;
+    width: auto;
+}
+
+.project-techology p {
+    display: inline-block;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-link {
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 2px 20px;
+    margin-top: 1rem;
+}
+
+.project-link:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.project-link a:hover {
+    color: var(--secondary-color);
+}
+
 @media (max-width: 768px) {
     body {
         width: 100%;
@@ -184,15 +278,28 @@ h3 {
     }
 
     header h2 {
-        display: none;
+        position: absolute;
+        top: 20;
     }
 
     .technologies-container {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .mobile-menu-toggle {
         display: block;
+        position: absolute;
+        right: 0;
+        top: 10;
+        padding: 1rem;
+    }
+
+    .contacts i {
+        display: block;
+    }
+
+    .contacts a {
+        padding-right: 0;
     }
 }

@@ -46,6 +46,7 @@ nav.large-display ul a:hover {
 }
 
 nav.mobile-display {
+    display: none;
     position: absolute;
     top: 20%;
     left: 0;
@@ -78,15 +79,14 @@ nav.mobile-display.active {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 3rem 3rem;
+    padding: 3rem 0;
     gap: 5rem;
     font-weight: 600;
 }
 
-header h2 {
-    margin-right: 3rem;
+header h1 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 
@@ -94,7 +94,6 @@ header h2 {
 }
 
 .main_text {
-    padding: 2rem;
     text-align: center;
 }
 
@@ -210,10 +209,11 @@ h3 {
 
 .project-techologies {
     display: flex;
-    flex-direction: row;
+    padding: 2rem;
+
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .project-techology {
@@ -221,11 +221,12 @@ h3 {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    background: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 5px 10px;
+
+    color: var(--primary-color);
+    padding: 5px 5px;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--tertiary-color);
 }
 
 .project-techology:hover {
@@ -250,22 +251,90 @@ h3 {
 }
 
 .project-link {
-    background: var(--secondary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 50px;
-    padding: 2px 20px;
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
-.project-link:hover {
-    opacity: 0.7;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+.fa-solid.fa-link {
+    margin-right: 5px;
+}
+
+.project-link .fa-brands.fa-github {
+    margin-right: 5px;
 }
 
 .project-link a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.flex-projects-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 10px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+}
+
+.project {
+    width: calc(100% / 2 - 10px);
+
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px;
+
+    padding: 2rem;
+}
+
+.contacts-container {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 10px 5px 10px;
+    padding: 2rem;
+}
+
+form > * {
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+form input[type='text'],
+form input[type='email'] {
+    width: calc(50% - 1.2rem);
+    display: inline-block;
+    border: none;
+}
+
+form input[type='text'],
+form input[type='email'],
+form button[type='submit'] {
+    height: 2.5rem;
+}
+
+form input[type='text'] {
+    margin-right: 2rem;
+}
+
+form textarea {
+    width: 100%;
+    height: 10rem;
+    resize: none;
+    font-size: var(--small-font-size);
+}
+
+form button[type='submit'] {
+    width: 100%;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -277,14 +346,21 @@ h3 {
         display: none;
     }
 
-    header h2 {
-        position: absolute;
-        top: 20;
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-weight: 600;
     }
 
     .technologies-container {
         display: flex;
         flex-direction: column;
+    }
+
+    nav.mobile-display {
+        display: block;
     }
 
     .mobile-menu-toggle {
@@ -301,5 +377,27 @@ h3 {
 
     .contacts a {
         padding-right: 0;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .flex-projects-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .project {
+        width: 100%;
+
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        box-shadow: 10px 5px 10px;
+
+        padding: 2rem;
     }
 }

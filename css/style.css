@@ -45,8 +45,13 @@ nav.large-display ul a:hover {
     color: var(--primary-color);
 }
 
-nav.mobile-display {
+.header_mobile-menu {
     display: none;
+    cursor: pointer;
+}
+
+nav.mobile-display {
+    /* display: none; */
     position: absolute;
     top: 20%;
     left: 0;
@@ -57,8 +62,12 @@ nav.mobile-display {
     text-align: center;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    transform: translateX(100%);
+
     transition: transform 0.3s ease-in-out;
+}
+
+nav.mobile-display {
+    transform: translateX(-100%);
 }
 
 nav.mobile-display.active {
@@ -399,5 +408,9 @@ form button[type='submit'] {
         box-shadow: 10px 5px 10px;
 
         padding: 2rem;
+    }
+
+    .header_mobile-menu {
+        display: block;
     }
 }

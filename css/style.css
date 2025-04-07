@@ -53,7 +53,7 @@ nav.large-display ul a:hover {
 nav.mobile-display {
     /* display: none; */
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 0;
     width: 100%;
     background: var(--primary-color);
@@ -216,16 +216,16 @@ h3 {
     align-items: center;
 }
 
-.project-techologies {
+.project-technologies {
     display: flex;
     padding: 2rem;
-
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
 
-.project-techology {
+.project-technology {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -238,17 +238,17 @@ h3 {
     border: 2px solid var(--tertiary-color);
 }
 
-.project-techology:hover {
+.project-technology:hover {
     opacity: 0.9;
     /* color: var(--primary-color); */
 }
 
-.project-techology img {
+.project-technology img {
     height: 20px;
     width: auto;
 }
 
-.project-techology p {
+.project-technology p {
     display: inline-block;
 }
 
@@ -376,7 +376,7 @@ form button[type='submit'] {
         display: block;
         position: absolute;
         right: 0;
-        top: 10;
+        top: 10px; /* 10 cega? */
         padding: 1rem;
     }
 
@@ -412,5 +412,15 @@ form button[type='submit'] {
 
     .header_mobile-menu {
         display: block;
+    }
+
+    .project-technologies {
+        display: block;
+    }
+
+    .project-technology {
+        margin-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
     }
 }

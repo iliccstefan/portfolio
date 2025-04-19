@@ -1,244 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Rubik+80s+Fade&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="icon"
-            href="https://symbl-world.akamaized.net/i/webp/ec/2ae129e3c07285abc48df6e59f5e64.webp"
-        />
-        <title>Stefan Ilic</title>
-    </head>
-    <body>
-        <header>
-            <h1>STEFAN ILIC</h1>
-            <nav class="large-display">
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
-            <div class="header__mobile-menu">
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars fa-2x"></i>
-                </div>
-                <nav class="mobile-display">
-                    <ul class="mobile-menu-list">
-                        <li class="mobile-manu-item"><a href="#home">home</a></li>
-                        <li class="mobile-menu-item"><a href="#projects">projects</a></li>
-                        <li class="mobile-menu-item"><a href="#contact">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex,nofollow,noarchive" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Rubik+80s+Fade&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="icon"
+			href="https://symbl-world.akamaized.net/i/webp/ec/2ae129e3c07285abc48df6e59f5e64.webp"
+		/>
+		<title>Stefan Ilic</title>
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar">
+				<div class="navbar__logo">
+					<h1 class="navbar__logo-text"><b>stefan ilic</b></h1>
+				</div>
+				<ul class="navbar__menu">
+					<li class="navbar__menu-item">
+						<a class="navbar__menu-link" href="#about">about</a>
+					</li>
+					<li class="navbar__menu-item">
+						<a class="navbar__menu-link" href="#projects"
+							>projects</a
+						>
+					</li>
+					<li class="navbar__menu-item">
+						<a class="navbar__menu-link" href="#contact">contact</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="mobile-navbar">
+				<div class="mobile-navbar__logo">
+					<h1 class="mobile-navbar__logo-text">stefan ilic</h1>
+				</div>
+				<div class="mobile-navbar__mobile-menu">
+					<i class="fa-solid fa-bars mobile-navbar__hamburger"></i>
+					<ul class="mobile-navbar__menu hidden">
+						<li class="mobile-navbar__menu-item">
+							<a class="mobile-navbar__menu-link" href="#about"
+								>about</a
+							>
+						</li>
+						<hr class="mobile-navbar__menu-item-separator" />
+						<li class="mobile-navbar__menu-item">
+							<a class="mobile-navbar__menu-link" href="#projects"
+								>projects</a
+							>
+						</li>
+						<hr class="mobile-navbar__menu-item-separator" />
+						<li class="mobile-navbar__menu-item">
+							<a class="mobile-navbar__menu-link" href="#contact"
+								>contact</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
 
-        <div class="main_text" id="home">
-            <h3>
-                Hi, I'm Stefan, a <span>Frontend Web Developer</span>. I love things like design,
-                creativity, and organization. I have been into frontend development for a year, and
-                my goal is to become a true expert in this area.
-            </h3>
-            <div class="contacts">
-                <i class="fa-solid fa-house"></i
-                ><a
-                    href="https://www.google.com/maps/place/%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4/@44.8148852,20.0928283,10z/data=!3m1!4b1!4m6!3m5!1s0x475a7aa3d7b53fbd:0x1db8645cf2177ee4!8m2!3d44.8125449!4d20.4612299!16zL20vMGZoemY?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
-                    target="_blank"
-                >
-                    Serbia</a
-                >
-                <i class="fa-brands fa-linkedin"></i><a href="#">Linkedin</a>
-                <i class="fa-brands fa-github"></i
-                ><a href="https://github.com/iliccstefan" target="_blank">GitHub</a>
-            </div>
-            <h3>TECHNOLOGIES:</h3>
-            <div class="technologies-container">
-                <div class="technology-container technology-container-1">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png"
-                        alt=""
-                    />
+			<section id="about" class="about-section">
+				<h2>About me</h2>
 
-                    <p>HTML</p>
-                </div>
-                <div class="technology-container technology-container-2">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
-                        alt=""
-                    />
-                    <p>CSS</p>
-                </div>
-                <div class="technology-container technology-container-3">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sass.png"
-                        alt=""
-                    />
-                    <p>SaSS</p>
-                </div>
-                <div class="technology-container technology-container-4">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png"
-                        alt=""
-                    />
-                    <p>JavaScript</p>
-                </div>
-                <div class="technology-container technology-container-5">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png"
-                        alt=""
-                    />
-                    <p>Bash</p>
-                </div>
-                <div class="technology-container technology-container-6">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"
-                        alt=""
-                    />
-                    <p>Git</p>
-                </div>
-                <div class="technology-container technology-container-7">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/node_js.png"
-                        alt=""
-                    />
-                    <p>Node.js</p>
-                </div>
-                <div class="technology-container technology-container-8">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/webpack.png"
-                        alt=""
-                    />
-                    <p>WebPack</p>
-                </div>
-                <div class="technology-container technology-container-9">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github.png"
-                        alt=""
-                    />
-                    <p>GitHub</p>
-                </div>
-                <div class="technology-container technology-container-10">
-                    <img
-                        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/visual_studio_code.png"
-                        alt=""
-                    />
-                    <p>VS Code</p>
-                </div>
-            </div>
-        </div>
-        <h3>PROJECTS:</h3>
-        <div class="flex-projects-wrap" id="projects">
-            <div class="project project1">
-                <img class="project-img" src="./tatulaink.com_.png" alt="" />
-                <h4>Tatula Ink</h4>
-                <p class="project-description">
-                    Tatula Ink is a website dedicated to tattoos and piercings, where users and
-                    prospective clients can find information about available services and the option
-                    to schedule appointments.
-                </p>
-                <div class="project-technologies">
-                    <div class="project-technology">
-                        <img
-                            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png"
-                            alt=""
-                        />
-                        <p>HTML</p>
-                    </div>
-                    <div class="project-technology">
-                        <img
-                            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
-                            alt=""
-                        />
-                        <p>CSS</p>
-                    </div>
-                    <div class="project-technology">
-                        <img
-                            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png"
-                            alt=""
-                        />
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <div class="project-link">
-                        <a href="https://tatulaink.com/" target="_blank"
-                            ><i class="fa-solid fa-link"></i>Tatulaink.com</a
-                        >
-                    </div>
-                    <div class="project-link">
-                        <a href="https://github.com/iliccstefan/tatula-website" target="_blank"
-                            ><i class="fa-brands fa-github"></i>Repository</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="project project-2">
-                <img class="project-img" src="./portfolio.png" alt="" />
-                <h4>Portfolio</h4>
-                <p class="project-description-2">
-                    This is my personal portfolio in which I briefly describe myself and showcase
-                    the technologies I know, as well as the projects I have worked on.
-                </p>
-                <div class="project-technologies">
-                    <div class="project-technology">
-                        <img
-                            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png"
-                            alt=""
-                        />
-                        <p>HTML</p>
-                    </div>
-                    <div class="project-technology">
-                        <img
-                            src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
-                            alt=""
-                        />
-                        <p>CSS</p>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <div class="project-link">
-                        <a href="https://tatulaink.com/" target="_blank"
-                            ><i class="fa-solid fa-link"></i>stefanilic.dev</a
-                        >
-                    </div>
-                    <div class="project-link">
-                        <a href="https://github.com/iliccstefan/portfolio" target="_blank"
-                            ><i class="fa-brands fa-github"></i>Repository</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h3 id="contact">CONTACT FORM:</h3>
-        <div class="contacts-container">
-            <p>
-                I'm very excited that you visited my portfolio! If you want to contact me or ask
-                anything, feel free to write!
-            </p>
-            <form>
-                <input type="text" id="name" placeholder="Your name" />
-                <input type="email" id="email" placeholder="Your email" />
-                <textarea name="message" id="message" placeholder="Your message"></textarea>
-                <input type="submit" value="" />
-            </form>
-        </div>
+				<p>
+					I am Stefan Ilic, a
+					<b>frontend web developer</b>
+					with one year of amateur experience. In addition to
+					programming, I enjoy sports, especially tennis and football.
+					On my portfolio, you can find more information about me,
+					including my personal projects and ways to get in touch.
+				</p>
+				<div class="about-section__details-container">
+					<div class="about-section__detail-container">
+						<i class="fa-solid fa-house about-section__icon"></i>
+						<a
+							class="about-section__link"
+							href="https://www.google.com/maps/place/%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4/@44.8148852,20.0928283,10z/data=!3m1!4b1!4m6!3m5!1s0x475a7aa3d7b53fbd:0x1db8645cf2177ee4!8m2!3d44.8125449!4d20.4612299!16zL20vMGZoemY?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
+							>Serbia</a
+						>
+					</div>
+					<div class="about-section__detail-container">
+						<i
+							class="fa-brands fa-linkedin about-section__icon"
+						></i>
+						<a class="about-section__link" href="">Linkedin</a>
+					</div>
+					<div class="about-section__detail-container">
+						<i class="fa-brands fa-github about-section__icon"></i>
+						<a
+							class="about-section__link"
+							href="https://github.com/iliccstefan"
+							>GitHub</a
+						>
+					</div>
+				</div>
+				<p class="skills-section__tech-paragraph">
+					Here, you can explore the technologies I’m familiar with and
+					actively use in my projects.
+				</p>
+				<div class="skills-section__skills-container">
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png"
+							alt="HTML icon"
+						/>
+						<span>HTML</span>
+					</div>
 
-        <footer>&copy; Copyright 2025.</footer>
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
+							alt="CSS icon"
+						/>
+						<span>CSS</span>
+					</div>
 
-        <script src="./js/script.js"></script>
-    </body>
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sass.png"
+							alt="Sass icon"
+						/>
+						<span>Sass</span>
+					</div>
+
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png"
+							alt="JavaScript icon"
+						/>
+						<span>JavaScript</span>
+					</div>
+
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png"
+							alt="Bash"
+						/>
+						<span>Bash</span>
+					</div>
+
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"
+							alt="Git icon"
+						/>
+						<span>Git</span>
+					</div>
+
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/node_js.png"
+							alt="Node.js icon"
+						/>
+						<span>Node.js</span>
+					</div>
+
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/webpack.png"
+							alt="Webpack icon"
+						/>
+						<span>Webpack</span>
+					</div>
+
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github.png"
+							alt="GitHub icon"
+						/>
+						<span>GitHub</span>
+					</div>
+
+					<div class="skills-section__skill-container">
+						<img
+							src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/visual_studio_code.png"
+							alt="Visual Studio Code icon"
+						/>
+						<span>VS Code</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="projects" class="projects-section">
+				<h2>My projects</h2>
+
+				<div class="projects-section__cards-container">
+					<div class="projects-section__card-container">
+						<div class="project-section__image-and-overlay">
+							<img
+								class="project-section__project-image"
+								src="./images/tatula.png"
+								alt="tatula tattoo studio landing website project"
+							/>
+							<div
+								class="project-section__project-pills-container"
+							>
+								<span class="project__section-project-pill"
+									>HTML5</span
+								>
+								<span class="project__section-project-pill"
+									>CSS3</span
+								>
+								<span class="project__section-project-pill"
+									>Font Awesome</span
+								>
+								<span class="project__section-project-pill"
+									>Netlify</span
+								>
+								<span class="project__section-project-pill"
+									>JavaScript</span
+								>
+								<span class="project__section-project-pill"
+									>Formspree</span
+								>
+								<span class="project__section-project-pill"
+									>Git</span
+								>
+								<span class="project__section-project-pill"
+									>GitHub</span
+								>
+							</div>
+						</div>
+						<h3 class="projects-section__project-title">
+							Tatula Ink & Artistry Studio Landing Website
+						</h3>
+						<p class="projects-section__project-description">
+							A modern, multi-page website designed for a seamless
+							experience across all devices. It’s fully
+							responsive, SEO-optimized, and features an
+							integrated contact form for easy booking and
+							inquiries.
+						</p>
+						<div class="projects-section__project-links">
+							<a
+								href="https://tatulaink.com"
+								target="_blank"
+								class="projects-section__project-demo"
+								><i class="fa-solid fa-link"></i> Live demo</a
+							>
+							<a
+								href="https://github.com/iliccstefan/tatula-website"
+								target="_blank"
+								class="projects-section__project-repo"
+								><i class="fa-brands fa-github"></i>
+								Repository</a
+							>
+						</div>
+					</div>
+
+					<div class="projects-section__card-container">
+						<div class="project-section__image-and-overlay">
+							<img
+								class="project-section__project-image"
+								src="./images/portfolio.png"
+								alt="my person portfolio website project"
+							/>
+							<div
+								class="project-section__project-pills-container"
+							>
+								<span class="project__section-project-pill"
+									>HTML5</span
+								>
+								<span class="project__section-project-pill"
+									>CSS3</span
+								>
+								<span class="project__section-project-pill"
+									>Font Awesome</span
+								>
+								<span class="project__section-project-pill"
+									>Vercel</span
+								>
+								<span class="project__section-project-pill"
+									>JavaScript</span
+								>
+								<span class="project__section-project-pill"
+									>Git</span
+								>
+								<span class="project__section-project-pill"
+									>GitHub</span
+								>
+							</div>
+						</div>
+						<h3 class="projects-section__project-title">
+							Personal Portfolio Website
+						</h3>
+						<p class="projects-section__project-description">
+							This is a responsive website, built with scalable
+							code following the BEM naming convention for
+							maintainable structure. It features a fully
+							functional contact form and is reliably hosted on
+							Vercel for fast performance.
+						</p>
+						<div class="projects-section__project-links">
+							<a
+								href="https://stefanilic.dev"
+								target="_blank"
+								class="projects-section__project-demo"
+								><i class="fa-solid fa-link"></i> Live demo</a
+							>
+							<a
+								href="https://github.com/iliccstefan/portfolio"
+								target="_blank"
+								class="projects-section__project-repo"
+								><i class="fa-brands fa-github"></i>
+								Repository</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="contact-section">
+				<h2>Contact me</h2>
+
+				<div class="contact-section__content">
+					<div class="contact-section__left-part">
+						<p class="contact-section__text">
+							Let’s connect! Whether you have a project in mind, a
+							question, or just want to chat, feel free to reach
+							out.
+						</p>
+					</div>
+					<div class="contact-section__right-part">
+						<form
+							action="https://formspree.io/f/xeoanqoe"
+							method="POST"
+							class="contact-section__form"
+						>
+							<input
+								type="text"
+								class="contact-section__name-field"
+								placeholder="Your name"
+								required
+							/>
+							<input
+								type="email"
+								name="email"
+								class="contact-section__email-field"
+								placeholder="Your email"
+								required
+							/>
+							<textarea
+								name="message"
+								class="contact-section__message-field"
+								placeholder="Your question or message"
+								required
+							></textarea>
+							<input
+								type="submit"
+								value="Send message"
+								class="contact-section__submit-button"
+							/>
+						</form>
+					</div>
+				</div>
+			</section>
+			<hr />
+			<footer>
+				<span>
+					Copyright © <span class="current-year"></span> Stefan Ilic
+				</span>
+
+				<div class="footer__details-container">
+					<div class="footer__detail-container">
+						<a
+							class="footer__link"
+							href="https://www.google.com/maps/place/%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4/@44.8148852,20.0928283,10z/data=!3m1!4b1!4m6!3m5!1s0x475a7aa3d7b53fbd:0x1db8645cf2177ee4!8m2!3d44.8125449!4d20.4612299!16zL20vMGZoemY?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
+							><i class="fa-solid fa-house footer__icon"></i
+						></a>
+					</div>
+					<div class="footer__detail-container">
+						<a class="footer__link" href=""
+							><i class="fa-brands fa-linkedin footer__icon"></i
+						></a>
+					</div>
+					<div class="footer__detail-container">
+						<a
+							class="footer__link"
+							href="https://github.com/iliccstefan"
+							><i class="fa-brands fa-github footer__icon"></i
+						></a>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
 </html>

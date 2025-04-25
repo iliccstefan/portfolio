@@ -46,70 +46,76 @@
 			</nav>
 			<nav class="mobile-navbar">
 				<div class="mobile-navbar__logo">
-					<h1 class="mobile-navbar__logo-text">stefan ilic</h1>
+					<h1 class="mobile-navbar__logo-text"><b>stefan ilic</b></h1>
 				</div>
 				<div class="mobile-navbar__mobile-menu">
 					<i class="fa-solid fa-bars mobile-navbar__hamburger"></i>
-					<ul class="mobile-navbar__menu hidden">
-						<li class="mobile-navbar__menu-item">
-							<a class="mobile-navbar__menu-link" href="#about"
-								>about</a
-							>
-						</li>
-						<hr class="mobile-navbar__menu-item-separator" />
-						<li class="mobile-navbar__menu-item">
-							<a class="mobile-navbar__menu-link" href="#projects"
-								>projects</a
-							>
-						</li>
-						<hr class="mobile-navbar__menu-item-separator" />
-						<li class="mobile-navbar__menu-item">
-							<a class="mobile-navbar__menu-link" href="#contact"
-								>contact</a
-							>
-						</li>
-					</ul>
+					<div class="mobile-navbar__menu-container">
+						<ul class="mobile-navbar__menu">
+							<li class="mobile-navbar__menu-item">
+								<a
+									class="mobile-navbar__menu-link"
+									href="#about"
+									>about</a
+								>
+							</li>
+							<hr class="mobile-navbar__menu-item-separator" />
+							<li class="mobile-navbar__menu-item">
+								<a
+									class="mobile-navbar__menu-link"
+									href="#projects"
+									>projects</a
+								>
+							</li>
+							<hr class="mobile-navbar__menu-item-separator" />
+							<li class="mobile-navbar__menu-item">
+								<a
+									class="mobile-navbar__menu-link"
+									href="#contact"
+									>contact</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 
 			<section id="about" class="about-section">
 				<h2>About me</h2>
-
 				<p>
-					I am Stefan Ilic, a
-					<b>frontend web developer</b>
-					with one year of amateur experience. In addition to
-					programming, I enjoy sports, especially tennis and football.
-					On my portfolio, you can find more information about me,
-					including my personal projects and ways to get in touch.
+					Hi, my name is Stefan Ilic. I am a
+					<span class="my-current-age"></span>-year-old
+					<b>Frontend Web Developer</b> based in Belgrade, Serbia. 🇷🇸
 				</p>
-				<div class="about-section__details-container">
-					<div class="about-section__detail-container">
-						<i class="fa-solid fa-house about-section__icon"></i>
-						<a
-							class="about-section__link"
-							href="https://www.google.com/maps/place/%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4/@44.8148852,20.0928283,10z/data=!3m1!4b1!4m6!3m5!1s0x475a7aa3d7b53fbd:0x1db8645cf2177ee4!8m2!3d44.8125449!4d20.4612299!16zL20vMGZoemY?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
-							>Serbia</a
-						>
-					</div>
-					<div class="about-section__detail-container">
-						<i
-							class="fa-brands fa-linkedin about-section__icon"
-						></i>
-						<a class="about-section__link" href="">Linkedin</a>
-					</div>
-					<div class="about-section__detail-container">
-						<i class="fa-brands fa-github about-section__icon"></i>
-						<a
-							class="about-section__link"
-							href="https://github.com/iliccstefan"
-							>GitHub</a
-						>
-					</div>
-				</div>
-				<p class="skills-section__tech-paragraph">
-					Here, you can explore the technologies I’m familiar with and
-					actively use in my projects.
+				<p>
+					Despite my non-IT background, I started learning coding more
+					than a year ago out of a desire to become a developer. Since
+					then, my affinity for this profession has been growing.
+					Currently, my main focus is building modern, useful web
+					applications using HTML, CSS, JavaScript, and other tools
+					and technologies you'll find below. Since
+					<b>JavaScript is my go-to language</b> I also have
+					experience creating userscripts, browser extensions and all
+					kinds of fun little projects. 👨🏻‍💻
+				</p>
+				<p>
+					I’d like to enhance my skills in areas such as frontend
+					system design, performance optimization and making highly
+					interactive GUIs. My main professional goal is to
+					<b>become a true expert</b> in the world of frontend
+					development. ⌨️
+				</p>
+				<p>
+					When I’m not coding, I spend my free time learning new
+					things, watching movies and TV shows, listening to music and
+					hanging out. I also enjoy cycling by the river and working
+					out at the gym. I absolutely love playing <b>tennis</b> and
+					<b>soccer</b>. ⚽️
+				</p>
+				<p>
+					<b>Feel free to reach out</b> , whether you’d like to
+					collaborate, want to build something cool together, have a
+					question to ask or just feel like saying hi. 🤙🏻
 				</p>
 				<div class="skills-section__skills-container">
 					<div class="skills-section__skill-container">
@@ -203,7 +209,7 @@
 							<img
 								class="project-section__project-image"
 								src="./images/tatula.png"
-								alt="tatula tattoo studio landing website project"
+								alt="tatula tattoo studio Official website project"
 							/>
 							<div
 								class="project-section__project-pills-container"
@@ -235,7 +241,7 @@
 							</div>
 						</div>
 						<h3 class="projects-section__project-title">
-							Tatula Ink & Artistry Studio Landing Website
+							Tatula Ink & Artistry Studio - Official Website
 						</h3>
 						<p class="projects-section__project-description">
 							A modern, multi-page website designed for a seamless
@@ -322,15 +328,39 @@
 					</div>
 				</div>
 			</section>
-			<section id="contact" class="contact-section">
+			<section
+				id="contact"
+				class="contact-section"
+				style="position: relative"
+			>
 				<h2>Contact me</h2>
-
+				<span
+					style="
+						position: absolute;
+						display: none;
+						top: 0;
+						right: 0;
+						color: green;
+					"
+					>✓ Your message has been sent.</span
+				>
 				<div class="contact-section__content">
 					<div class="contact-section__left-part">
 						<p class="contact-section__text">
-							Let’s connect! Whether you have a project in mind, a
-							question, or just want to chat, feel free to reach
-							out.
+							Feel free to reach out using the contact form.
+							<span class="contact-section__emoji-right">👉🏻</span
+							><span class="contact-section__emoji-down">👇🏻</span>
+						</p>
+						<p class="contact-section__text">
+							Whether you have a collaboration idea, a question,
+							or just want to share something, I'm here to
+							respond. 🤙🏻
+						</p>
+						<p class="contact-section__text">
+							I’ll do my best to respond as quickly as possible,
+							and
+							<b>you can expect my reply in your email inbox</b>.
+							📬
 						</p>
 					</div>
 					<div class="contact-section__right-part">

@@ -145,6 +145,10 @@ b {
     font-size: var(--medium-font);
 }
 
+.navbar__menu-link:hover {
+    color: var(--primary-color);
+}
+
 .about-section__details-container {
     display: flex;
     flex-direction: row;

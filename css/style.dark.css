@@ -1,0 +1,48 @@
+body.dark {
+    background-color: #160101;
+}
+
+body.dark *:is(:not(b)) {
+    color: var(--light-color);
+}
+
+body.dark form :is(input, textarea) {
+    background-color: grey;
+}
+
+body.dark button :is(.fa-solid.fa-lightbulb) {
+    color: #160101;
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+body.dark div :is(.skills-section__skill-container) {
+    border-color: aliceblue;
+    box-shadow: 10px 10px 5px rgba(white, white, white, 0.9);
+}
+
+body.dark div :is(.projects-section__card-container) {
+    border-color: aliceblue;
+}
+
+body.dark div :is(.project__section-project-pill):hover {
+    background-color: #160101;
+}
+body.dark div :is(.project__section-project-pill) {
+    border-color: white;
+}
+
+body.dark
+    form
+    :is(
+        .contact-section__name-field,
+        .contact-section__email-field,
+        .contact-section__message-field,
+       /*  .contact-section__submit-button */
+    ) {
+    background-color: white;
+}
+body.dark input :is(..contact-section__submit-button):hover {
+    background-color: #160101;
+}

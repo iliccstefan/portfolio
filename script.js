@@ -14,6 +14,19 @@ document.addEventListener('click', (event) => {
     document.querySelector(target.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
 });
 
+//dark light mode
+const mode = document.getElementById('theme-toggle');
+
+mode.addEventListener('click', () => {
+    const isModeDark = document.body.classList.contains('dark');
+
+    if (isModeDark) {
+        document.body.classList.remove('dark');
+    } else {
+        document.body.classList.add('dark');
+    }
+});
+
 // Hambuerger menu click/toggle effect
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerIcon = document.querySelector('.mobile-navbar__hamburger');

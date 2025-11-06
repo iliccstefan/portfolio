@@ -36,6 +36,14 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+.fa-solid.fa-lightbulb {
+    color: #014421;
+}
+
+.fa-solid.fa-lightbulb:hover {
+    color: var(--dark-color);
+    cursor: pointer;
+}
 
 .not-found-heading {
     font-size: var(--large-font);

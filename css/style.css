@@ -124,6 +124,17 @@ b {
     color: var(--light-color);
 }
 
+i .fa-solid.fa-lightbulb {
+    color: #444;
+}
+
+.light-icon {
+    font-size: 1.5rem;
+    border-radius: 50px;
+    padding: 0.5rem;
+    border-color: #014421;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;

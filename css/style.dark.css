@@ -1,20 +1,31 @@
 body.dark {
-    background-color: #160101;
+    background-color: #121212;
 }
 
-body.dark *:is(:not(b)) {
+body.dark * {
     color: var(--light-color);
 }
 
-body.dark form :is(input, textarea) {
+body.dark textarea,
+body.dark input {
     background-color: grey;
 }
 
-body.dark button :is(.fa-solid.fa-lightbulb) {
-    color: #160101;
-    background-color: white;
+body.dark .fa-solid.fa-lightbulb {
+    color: white;
+}
+
+body.dark .fa-solid.fa-lightbulb:hover {
+    color: #121212;
+}
+
+body.dark button {
+    color: #080303;
+    background-color: var(--primary-color);
     padding: 0.5rem;
     font-size: 1.5rem;
+    border-radius: 50px;
+    border-color: white;
 }
 
 body.dark div :is(.skills-section__skill-container) {
@@ -27,22 +38,37 @@ body.dark div :is(.projects-section__card-container) {
 }
 
 body.dark div :is(.project__section-project-pill):hover {
-    background-color: #160101;
+    background-color: #121212;
 }
 body.dark div :is(.project__section-project-pill) {
     border-color: white;
 }
 
-body.dark
-    form
-    :is(
-        .contact-section__name-field,
-        .contact-section__email-field,
-        .contact-section__message-field,
-       /*  .contact-section__submit-button */
-    ) {
-    background-color: white;
+body.dark .contact-section__name-field,
+body.dark .contact-section__email-field,
+body.dark .contact-section__message-field,
+body.dark .contact-section__submit-button {
+    border-color: white;
+    background-color: lightgray;
 }
-body.dark input :is(..contact-section__submit-button):hover {
-    background-color: #160101;
+
+body.dark .contact-section__name-field::placeholder,
+body.dark .contact-section__email-field::placeholder,
+body.dark .contact-section__message-field::placeholder {
+    color: #121212;
+}
+body.dark .contact-section__submit-button {
+    color: #121212;
+}
+
+body.dark .contact-section__submit-button:hover {
+    background-color: #014421;
+}
+
+body.dark .skills-section__skill-container:nth-child(odd) {
+    background: lightgray;
+}
+
+body.dark .skills-section__skill-container:nth-child(odd) span {
+    color: #080303;
 }

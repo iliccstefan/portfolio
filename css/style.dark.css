@@ -1,7 +1,6 @@
 body.dark {
     background-color: #121212;
 }
-
 body.dark * {
     color: var(--light-color);
 }
@@ -19,17 +18,17 @@ body.dark .fa-solid.fa-lightbulb:hover {
     color: #121212;
 }
 
-body.dark button {
+body.dark .light-icon {
     color: #080303;
     background-color: var(--primary-color);
     padding: 0.5rem;
     font-size: 1.5rem;
     border-radius: 50px;
-    border-color: white;
+    border-color: #fffcf2;
 }
 
 body.dark div :is(.skills-section__skill-container) {
-    border-color: aliceblue;
+    border-color: #fffcf2;
     box-shadow: 10px 10px 5px rgba(white, white, white, 0.9);
 }
 
@@ -41,24 +40,24 @@ body.dark div :is(.project__section-project-pill):hover {
     background-color: #121212;
 }
 body.dark div :is(.project__section-project-pill) {
-    border-color: white;
+    border-color: #fffcf2;
 }
 
 body.dark .contact-section__name-field,
 body.dark .contact-section__email-field,
 body.dark .contact-section__message-field,
 body.dark .contact-section__submit-button {
-    border-color: white;
-    background-color: lightgray;
+    border-color: #fffcf2;
+    background-color: #121212;
 }
 
 body.dark .contact-section__name-field::placeholder,
 body.dark .contact-section__email-field::placeholder,
 body.dark .contact-section__message-field::placeholder {
-    color: #121212;
+    color: #fffcf2;
 }
 body.dark .contact-section__submit-button {
-    color: #121212;
+    color: #fffcf2;
 }
 
 body.dark .contact-section__submit-button:hover {
@@ -71,4 +70,12 @@ body.dark .skills-section__skill-container:nth-child(odd) {
 
 body.dark .skills-section__skill-container:nth-child(odd) span {
     color: #080303;
+}
+
+body.dark .project-section__project-image-light {
+    display: none;
+}
+
+body.dark p {
+    color: #fffcf2;
 }

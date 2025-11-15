@@ -168,6 +168,12 @@ i .fa-solid.fa-lightbulb {
     color: var(--primary-color);
 }
 
+.navbar__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-section__details-container {
     display: flex;
     flex-direction: row;
@@ -193,6 +199,10 @@ i .fa-solid.fa-lightbulb {
 
 .skills-section__tech-paragraph {
     text-align: center;
+}
+
+body:not(.dark) .project-section__project-image-dark {
+    display: none;
 }
 
 .skills-section__skills-container {
@@ -289,7 +299,9 @@ hr {
     width: auto;
 }
 
-.project-section__project-image {
+.project-section__project-image,
+.project-section__project-image-light,
+.project-section__project-image-dark {
     opacity: 1;
     display: block;
     width: 100%;
@@ -315,7 +327,9 @@ hr {
     width: 100%;
 }
 
-.projects-section__card-container:hover .project-section__project-image {
+.projects-section__card-container:hover .project-section__project-image,
+.projects-section__card-container:hover .project-section__project-image-dark,
+.projects-section__card-container:hover .project-section__project-image-light {
     opacity: 0.3;
 }
 
@@ -569,7 +583,9 @@ footer {
         width: 100%;
     }
 
-    .project-section__project-image {
+    .project-section__project-image,
+    .project-section__project-image-dark,
+    .project-section__project-image-light {
         width: 80%;
         margin: auto;
     }

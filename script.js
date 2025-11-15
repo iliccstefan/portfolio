@@ -1,3 +1,4 @@
+const DEFAULT_MODE = 'light';
 // Curent year in footer
 const currentYear = document.querySelector('.current-year');
 
@@ -16,13 +17,33 @@ document.addEventListener('click', (event) => {
 
 //dark light mode
 const mode = document.getElementById('theme-toggle');
+const modeMobile = document.getElementById('theme-toggle-mobile');
 
-mode.addEventListener('click', () => {
+mode.addEventListener('click', themeToggle);
+modeMobile.addEventListener('click', themeToggle);
+
+function themeToggle() {
     const isModeDark = document.body.classList.contains('dark');
 
     if (isModeDark) {
+        localStorage.setItem('mode', 'light');
         document.body.classList.remove('dark');
     } else {
+        localStorage.setItem('mode', 'dark');
+        document.body.classList.add('dark');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const isModeSet = Boolean(localStorage.getItem('mode'));
+
+    if (!isModeSet) {
+        localStorage.setItem('mode', DEFAULT_MODE);
+    }
+
+    const isModeDark = localStorage.getItem('mode') === 'dark';
+
+    if (isModeDark) {
         document.body.classList.add('dark');
     }
 });
